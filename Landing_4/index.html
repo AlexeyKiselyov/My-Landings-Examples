@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>brandname</title>
+
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fullpage styles -->
+
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <main id="fullpage">
+      <!-------=== Hero Section===------->
+
+      <section class="hero-section section">
+        <div class="hero-section__wrapper">
+          <!---Header---->
+          <header>
+            <nav class="navigation">
+              <a
+                href="./community.html"
+                class="header__community-link header-link"
+                id="community-link"
+                >Community</a
+              >
+
+              <a href="./index.html" class="logo-link">
+                <img
+                  class="navigation-icon"
+                  src="./images/logo.svg"
+                  alt="icon"
+                  width="48px"
+                  height="48px"
+                />
+                <p class="logo header-link" id="logo-link">brandname</p>
+              </a>
+
+              <a href="./matching.html" class="header__matching-link header-link" id="matching-link"
+                >Matching</a
+              >
+
+              <!--Header Register Button -->
+
+              <button type="button" class="header__register-button" data-scroll-link>
+                Register now
+              </button>
+
+              <!-- Burger Menu button -->
+
+              <button
+                type="button"
+                class="navigation__menu-button"
+                id="burger-button"
+                data-modal-burger-open
+              >
+                <svg
+                  class="navigation__menu-button-image"
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 1L12 1" stroke="currentColor" stroke-width="2" />
+                  <path d="M0 7L12 7" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </button>
+            </nav>
+          </header>
+          <div class="hero-container">
+            <!----Hero ---->
+            <div class="container-basic">
+              <div class="hero-text__wrapper">
+                <h1 class="hero-title">Real People, Real Connections –</h1>
+                <h2 class="hero__title-cursive">Start Your Story Now!</h2>
+
+                <button type="button" class="register-button" data-scroll-link>Register now</button>
+              </div>
+            </div>
+          </div>
+          <div id="flower"></div>
+        </div>
+      </section>
+
+      <!-------=== Second Section ===------->
+
+      <section class="second-section section">
+        <!---Header Not First and Final ---->
+        <header>
+          <nav class="navigation animated">
+            <a
+              href="./community.html"
+              class="header__community-link header-link"
+              id="community-link"
+              >Community</a
+            >
+
+            <a href="./index.html" class="logo-link">
+              <img
+                class="navigation-icon"
+                src="./images/logo.svg"
+                alt="icon"
+                width="48px"
+                height="48px"
+              />
+              <p class="logo header-link" id="logo-link">brandname</p>
+            </a>
+
+            <a href="./matching.html" class="header__matching-link header-link" id="matching-link"
+              >Matching</a
+            >
+
+            <!--Header Register Button -->
+
+            <button
+              type="button"
+              class="header__register-button header-reg__center"
+              data-scroll-link
+            >
+              Register now
+            </button>
+
+            <!-- Burger Menu button -->
+
+            <button
+              type="button"
+              class="navigation__menu-button"
+              id="burger-button"
+              data-modal-burger-open
+            >
+              <svg
+                class="navigation__menu-button-image"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1L12 1" stroke="currentColor" stroke-width="2" />
+                <path d="M0 7L12 7" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <div class="second-section__wrapper">
+          <div class="second-section__container">
+            <div class="second-section__text-wrapper">
+              <h1 class="second-section__title-center">
+                Only <span class="title-cursive">active</span> and
+                <span class="title-cursive">verified</span>
+              </h1>
+              <h2 class="second-section__title-left">profiles for your</h2>
+              <h2 class="second-section__title-right">
+                <span class="title-cursive">safety</span> and
+                <span class="title-cursive">comfort</span>
+              </h2>
+            </div>
+          </div>
+
+          <div id="flower-second"></div>
+        </div>
+      </section>
+
+      <!-------=== Third Section ===------->
+
+      <section class="third-section section">
+        <!---Header Not First and Final ---->
+        <header>
+          <nav class="navigation animated">
+            <a
+              href="./community.html"
+              class="header__community-link header-link"
+              id="community-link"
+              >Community</a
+            >
+
+            <a href="./index.html" class="logo-link">
+              <img
+                class="navigation-icon"
+                src="./images/logo.svg"
+                alt="icon"
+                width="48px"
+                height="48px"
+              />
+              <p class="logo header-link" id="logo-link">brandname</p>
+            </a>
+
+            <a href="./matching.html" class="header__matching-link header-link" id="matching-link"
+              >Matching</a
+            >
+            <!--Header Register Button -->
+
+            <button
+              type="button"
+              class="header__register-button header-reg__center"
+              data-scroll-link
+            >
+              Register now
+            </button>
+
+            <!-- Burger Menu button -->
+
+            <button
+              type="button"
+              class="navigation__menu-button"
+              id="burger-button"
+              data-modal-burger-open
+            >
+              <svg
+                class="navigation__menu-button-image"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1L12 1" stroke="currentColor" stroke-width="2" />
+                <path d="M0 7L12 7" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <div class="third-section__wrapper">
+          <p class="third-section__text">
+            Our platform is dedicated to helping you find genuine connections with real people. With
+            a variety of interactive features meeting new people has never been easier or more
+            enjoyable. Join our vibrant community and explore countless opportunities to find your
+            perfect match.
+          </p>
+        </div>
+      </section>
+
+      <!-------=== Fourth Section ===------->
+
+      <section class="fourth-section section">
+        <!---Header Not First and Final ---->
+        <header>
+          <nav class="navigation animated">
+            <a
+              href="./community.html"
+              class="header__community-link header-link"
+              id="community-link"
+              >Community</a
+            >
+
+            <a href="./index.html" class="logo-link">
+              <img
+                class="navigation-icon"
+                src="./images/logo.svg"
+                alt="icon"
+                width="48px"
+                height="48px"
+              />
+              <p class="logo header-link" id="logo-link">brandname</p>
+            </a>
+
+            <a href="./matching.html" class="header__matching-link header-link" id="matching-link"
+              >Matching</a
+            >
+            <!--Header Register Button -->
+
+            <button
+              type="button"
+              class="header__register-button header-reg__center"
+              data-scroll-link
+            >
+              Register now
+            </button>
+
+            <!-- Burger Menu button -->
+
+            <button
+              type="button"
+              class="navigation__menu-button"
+              id="burger-button"
+              data-modal-burger-open
+            >
+              <svg
+                class="navigation__menu-button-image"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1L12 1" stroke="currentColor" stroke-width="2" />
+                <path d="M0 7L12 7" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <div class="fourth-section__wrapper">
+          <h2 class="fourth-section__title">
+            Experience Unique Dating Opportunities with Personalized Matches
+          </h2>
+          <p class="fourth-section__text">
+            Innovative matching algorithm helps you find potential partners who share your passions
+            and hobbies. With personalized recommendations and fun interactive activities, every
+            encounter on our platform is a step towards finding your perfect match. Explore a world
+            of possibilities and let us help you create unforgettable dating experiences.
+          </p>
+        </div>
+      </section>
+
+      <!-------=== Fifth Section ===------->
+
+      <section class="fifth-section section">
+        <!---Header Not First and Final ---->
+        <header>
+          <nav class="navigation animated">
+            <a
+              href="./community.html"
+              class="header__community-link header-link"
+              id="community-link"
+              >Community</a
+            >
+
+            <a href="./index.html" class="logo-link">
+              <img
+                class="navigation-icon"
+                src="./images/logo.svg"
+                alt="icon"
+                width="48px"
+                height="48px"
+              />
+              <p class="logo header-link" id="logo-link">brandname</p>
+            </a>
+
+            <a href="./matching.html" class="header__matching-link header-link" id="matching-link"
+              >Matching</a
+            >
+            <!--Header Register Button -->
+
+            <button
+              type="button"
+              class="header__register-button header-reg__center"
+              data-scroll-link
+            >
+              Register now
+            </button>
+
+            <!-- Burger Menu button -->
+
+            <button
+              type="button"
+              class="navigation__menu-button"
+              id="burger-button"
+              data-modal-burger-open
+            >
+              <svg
+                class="navigation__menu-button-image"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1L12 1" stroke="currentColor" stroke-width="2" />
+                <path d="M0 7L12 7" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <div class="fifth-section__wrapper">
+          <h2 class="fifth-section__title">Platform Key Advantages</h2>
+
+          <div class="fifth-section__info-wrapper">
+            <div class="fifth-section__info-first">
+              <div class="fifth-section__info-first-top">
+                <h3 class="fifth-section__subtitle">Platform Key Advantages</h3>
+                <p class="fifth-section__text">
+                  Our active community ensures that you can find and connect with potential matches
+                  who are genuinely interested in building relationships.
+                </p>
+              </div>
+
+              <div class="fifth-section__info-first-bottom">
+                <h3 class="fifth-section__subtitle">Advanced Matching Algorithm</h3>
+                <p class="fifth-section__text">
+                  Our cutting-edge matching algorithm goes beyond basic criteria, considering your
+                  interests, values, and lifestyle to help you find the most compatible partners.
+                </p>
+              </div>
+            </div>
+
+            <img
+              class="fifth-section__image"
+              src="./images/main-5th-section-man-and-woman.png"
+              alt="man and woman"
+              width="638px"
+            />
+
+            <div class="fifth-section__info-second">
+              <h3 class="fifth-section__subtitle">Personalized Recommendations</h3>
+              <p class="fifth-section__text">
+                Enjoy personalized dating recommendations based on your profile and interactions,
+                along with fun and interactive activities that make every connection meaningful.
+                From quizzes to virtual dates, we make sure your dating experience is enjoyable and
+                rewarding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------=== Final Section ===------->
+
+      <section class="final-section section" id="register-form">
+        <!---Header---->
+        <header>
+          <nav class="navigation animated">
+            <a
+              href="./community.html"
+              class="header__community-link header-link"
+              id="community-link"
+              >Community</a
+            >
+
+            <a href="./index.html" class="logo-link">
+              <img
+                class="navigation-icon"
+                src="./images/logo.svg"
+                alt="icon"
+                width="48px"
+                height="48px"
+              />
+              <p class="logo header-link" id="logo-link">brandname</p>
+            </a>
+
+            <a href="./matching.html" class="header__matching-link header-link" id="matching-link"
+              >Matching</a
+            >
+            <!--Header Register Button -->
+
+            <button type="button" class="header__register-button" data-scroll-link>
+              Register now
+            </button>
+
+            <!-- Burger Menu button -->
+
+            <button
+              type="button"
+              class="navigation__menu-button"
+              id="burger-button"
+              data-modal-burger-open
+            >
+              <svg
+                class="navigation__menu-button-image"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1L12 1" stroke="currentColor" stroke-width="2" />
+                <path d="M0 7L12 7" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <div class="final-section__wrapper">
+          <h2 class="final-section__title">Find Your Perfect Match</h2>
+
+          <form class="register-form">
+            <input type="text" name="name" required placeholder="Enter your name" />
+            <input type="email" name="email" required placeholder="Enter your email" />
+
+            <button type="submit" class="register-button final__register-button">
+              Register now
+            </button>
+          </form>
+        </div>
+
+        <!-------=== Footer Section ===--------->
+
+        <footer class="footer-section">
+          <div class="container-basic footer-container">
+            <nav class="footer-navigation">
+              <div class="footer__buttons-wrapper">
+                <a href="./community.html" class="footer__buttons__community-link">Community</a>
+
+                <a href="./matching.html" class="footer__buttons__matching-link">Matching</a>
+              </div>
+
+              <p class="footer__copyright-text">brandname © 2024 All rights reserved</p>
+
+              <div class="footer__links-wrapper">
+                <a href="" class="footer__link">Unsubscribe</a>
+                <a href="" class="footer__link">Terms and Conditions</a>
+                <a href="" class="footer__link">Privacy Policy</a>
+              </div>
+            </nav>
+
+            <!-- Logo -->
+            <a href="./index.html" class="footer__logo-link">
+              <img
+                class="navigation-icon"
+                src="./images/logo.svg"
+                alt="icon"
+                width="48px"
+                height="48px"
+              />
+              <p class="footer__logo">brandname</p>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <!-- ========== Modals =========== -->
+
+    <!-- Modal Window Burger Menu-->
+
+    <div class="backdrop-burger is-hidden" data-modal-burger>
+      <div class="modal-window__burger">
+        <a href="./index.html" class="modal__logo-link">
+          <img
+            class="navigation-icon"
+            src="./images/logo.svg"
+            alt="icon"
+            width="48px"
+            height="48px"
+          />
+          <p class="modal__logo">brandname</p>
+        </a>
+
+        <div class="modal__balance-wrapper">
+          <div class="modal__links-wrapper">
+            <a href="./community.html" class="modal__buttons__community-link">Community</a>
+
+            <a href="./matching.html" class="modal__buttons__matching-link">Matching</a>
+          </div>
+
+          <div class="modal__buttons-wrapper">
+            <button type="button" class="modal__register-button" data-scroll-link-modal>
+              Register now
+            </button>
+
+            <button class="modal-btn__burger-close" type="button" data-modal-burger-close>
+              <svg class="modal__icon-close" width="48px" height="48px">
+                <use xlink:href="./images/burger-menu__close.svg#burger-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!=====================Scripts=====================>
+
+    <!-- Modal Windows -->
+
+    <script type="module" src="./js/modalBurger.js"></script>
+
+    <!---Full Page JS -->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#fullpage').fullpage({
+          autoScrolling: true,
+          scrollHorizontally: false,
+          scrollOverflow: true,
+          scrollingSpeed: 700,
+          touchSensitivity: 15,
+          onLeave: function (origin, destination, direction) {
+            if (origin === 1 && destination === 2) {
+              $('#flower').removeClass('spin-in').addClass('spin-out');
+              $('#flower-second').removeClass('spin-in-2nd').addClass('spin-out-2nd');
+            }
+            if (origin === 2 && destination === 1) {
+              $('#flower').removeClass('spin-out').addClass('spin-in');
+              $('#flower-second').removeClass('spin-out-2nd').addClass('spin-in-2nd');
+            }
+          },
+        });
+      });
+    </script>
+
+    <!-- Scroll To Register Form -->
+
+    <script type="module" src="./js/scrollToRegisterForm.js"></script>
+  </body>
+</html>

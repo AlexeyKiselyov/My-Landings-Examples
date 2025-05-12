@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>BrandName</title>
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- SmoothScroll -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <main id="main">
+      <section class="hero-section">
+        <a class="header" href="./index.html">
+          <div class="icon-container">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+          </div>
+
+          <p class="logo-text">Brandname</p>
+        </a>
+
+        <div class="container-basic hero-container">
+          <div class="hero-text__wrapper">
+            <h1 class="hero-title">
+              このサイトで長く続く真面目な恋愛を始めよう。
+            </h1>
+            <p class="hero-descr">
+              今すぐ登録して、新たな出会いやドキドキする恋愛の世界を発見しましょう。
+            </p>
+
+            <button
+              class="register-button hero__desc-button"
+              type="button"
+              data-modal-register-open
+            >
+              始めよう
+            </button>
+          </div>
+
+          <div class="hero-image__wrapper">
+            <img
+              class="hero-image"
+              src="./images/hero-photoes.png"
+              alt="man and woman"
+              width="690px"
+            />
+            <img
+              class="hero-image mobile"
+              src="./images/hero-photoes-mobile.png"
+              alt="man and woman"
+              width="690px"
+            />
+          </div>
+        </div>
+
+        <button
+          class="register-button hero__mobile-button"
+          type="button"
+          data-modal-register-open
+        >
+          始めよう
+        </button>
+      </section>
+
+      <section class="motivation-section">
+        <div class="container-basic motivation-container">
+          <div class="motivation-image__wrapper">
+            <img
+              class="motivation__sun-image"
+              src="./images/red-sun.png"
+              alt="red sun"
+              width="520px"
+            />
+
+            <img
+              class="motivation__sun-image-mobile"
+              src="./images/red-sun-mobile.png"
+              alt="red sun"
+              width="760px"
+            />
+          </div>
+
+          <div class="motivation__text-wrapper">
+            <h2 class="motivation-title">あなたの恋人はすぐそこに。</h2>
+            <p class="motivation-descr">
+              運命の人は思っているよりも近くにいるかもしれません。意外な手助けや温かい笑顔としてやってくるかもしれないので、心をオープンにして、かならず赤い糸を見つけましょう。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section">
+        <div class="container-basic">
+          <h2 class="benefits-title">なぜこのサイトなのか</h2>
+
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <h3 class="benefits-item__title">匿名性</h3>
+              <p class="benefits-item__descr">
+                個人情報とメッセージは安全に保護され、どこかに公開されることはありません。
+              </p>
+            </li>
+
+            <li class="benefits-item">
+              <h3 class="benefits-item__title">安全性</h3>
+              <p class="benefits-item__descr">
+                最新の暗号化技術を使用してあなたのデータを守ります。
+              </p>
+            </li>
+
+            <li class="benefits-item">
+              <h3 class="benefits-item__title">本人確認</h3>
+              <p class="benefits-item__descr">
+                ユーザーの安全と真正性を確保するため、本人確認を行います。
+              </p>
+            </li>
+
+            <li class="benefits-item">
+              <h3 class="benefits-item__title">24時間365日のサポート体制</h3>
+              <p class="benefits-item__descr">
+                当社のサポートチームは、どんな質問や問題にでも対応するため、常に待機しています。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="story-sections">
+        <div class="container-basic">
+          <h3 class="story-title">素敵なラブストーリー</h3>
+
+          <div class="swiper storySwiper">
+            <ul class="swiper-wrapper">
+              <li class="story-item swiper-slide">
+                <img
+                  class="story-item__image"
+                  src="./images/story-1.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+
+                <div class="story-item__wrapper">
+                  <div class="story-item__text-wrapper">
+                    <h4 class="story-item__title">隆さんと沙友里さん</h4>
+
+                    <p class="story-item__descr">
+                      隆さんと沙友里さんは、マッチングサイトで偶然出会いました。共通の趣味や興味を知ることで、お互いへの理解が深まりました。
+                    </p>
+                  </div>
+
+                  <button
+                    class="story-item__button"
+                    type="button"
+                    data-story-slide="0"
+                  >
+                    もっと読む
+                    <svg class="hero-btn__img" width="24px" height="9px">
+                      <use
+                        xlink:href="./images/red-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="story-item swiper-slide">
+                <img
+                  class="story-item__image"
+                  src="./images/story-2.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+
+                <div class="story-item__wrapper">
+                  <div class="story-item__text-wrapper">
+                    <h4 class="story-item__title">けんじさんとあやこさん</h4>
+
+                    <p class="story-item__descr">
+                      けんじさんとあやこさんは、デーティングサイトで知り合いました。本と旅行が好きなけんじさんのプロフィール写真に、あやこさんは興味を持ちました。
+                    </p>
+                  </div>
+
+                  <button
+                    class="story-item__button"
+                    type="button"
+                    data-story-slide="1"
+                  >
+                    もっと読む
+                    <svg class="hero-btn__img" width="24px" height="9px">
+                      <use
+                        xlink:href="./images/red-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="story-item swiper-slide">
+                <img
+                  class="story-item__image"
+                  src="./images/story-3.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+
+                <div class="story-item__wrapper">
+                  <div class="story-item__text-wrapper">
+                    <h4 class="story-item__title">HiroshiさんとMiekoさん</h4>
+
+                    <p class="story-item__descr">
+                      HiroshiさんとMiekoさんは、マッチングサイトで知り合いました。最初のメッセージから、強く惹かれあい、毎日連絡を取り合いました。
+                    </p>
+                  </div>
+
+                  <button
+                    class="story-item__button"
+                    type="button"
+                    data-story-slide="2"
+                  >
+                    もっと読む
+                    <svg class="hero-btn__img" width="24px" height="9px">
+                      <use
+                        xlink:href="./images/red-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="story-item swiper-slide">
+                <img
+                  class="story-item__image"
+                  src="./images/story-4.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+
+                <div class="story-item__wrapper">
+                  <div class="story-item__text-wrapper">
+                    <h4 class="story-item__title">RyoさんとYukiさん</h4>
+
+                    <p class="story-item__descr">
+                      RyoさんとYukiさんは、忙しい平日にデーティングサイトでマッチしました。Ryoさんは、Yukiさんのプロフィール写真に一目ぼれしました。笑顔が忘れられなかったそうです。
+                    </p>
+                  </div>
+
+                  <button
+                    class="story-item__button"
+                    type="button"
+                    data-story-slide="3"
+                  >
+                    もっと読む
+                    <svg class="hero-btn__img" width="24px" height="9px">
+                      <use
+                        xlink:href="./images/red-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <p class="decor-text">あなたの恋人はすぐそこに。</p>
+      </section>
+
+      <section class="users-section">
+        <div class="container-basic">
+          <h3 class="users-title">オンライン中のユーザー</h3>
+
+          <ul class="users-list">
+            <li class="users-item">
+              <img
+                class="users-item__image"
+                src="./images/girl-1.jpg"
+                alt="Girl"
+              />
+
+              <div class="users-item__data">
+                <p class="users-item__name">Haruka, 23</p>
+                <div class="users-item__location">
+                  <svg
+                    class="users-item__location-icon"
+                    width="21px"
+                    height="21px"
+                  >
+                    <use xlink:href="./images/location.svg#location"></use>
+                  </svg>
+
+                  <p class="users-item__city">大阪</p>
+                </div>
+              </div>
+
+              <div class="users-item__buttons-wrapper">
+                <button type="button" class="users-item__chat" data-modal-chat>
+                  <svg
+                    id="chat"
+                    width="30"
+                    height="24"
+                    viewBox="0 0 30 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.26623 21.4791L8.02612 21.4122L7.79334 21.5013C6.37358 22.0448 5.30715 22.3655 4.54683 22.5546C5.03169 21.723 5.29391 21.1857 5.43083 20.7858C5.54235 20.46 5.57525 20.2152 5.58022 19.9839C5.58269 19.8686 5.58089 19.802 5.57942 19.7481C5.57753 19.6785 5.57621 19.6298 5.58539 19.5244L5.62036 19.1228L5.30636 18.87C3.00351 17.0163 1.63911 14.5523 1.63911 11.9006C1.63911 9.14953 3.10085 6.60642 5.56063 4.72659C8.02092 2.84636 11.4465 1.6628 15.2438 1.6628C19.0411 1.6628 22.4666 2.84636 24.9269 4.72659C27.3867 6.60642 28.8484 9.14953 28.8484 11.9006C28.8484 14.6517 27.3867 17.1949 24.9269 19.0747C22.4666 20.9549 19.0411 22.1385 15.2438 22.1385C14.3796 22.1385 13.0014 22.078 11.6422 21.9625C10.2663 21.8457 8.98048 21.6779 8.26623 21.4791Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+
+                    <circle
+                      id="dot1"
+                      class="dot"
+                      cx="10"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot2"
+                      class="dot"
+                      cx="15"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot3"
+                      class="dot"
+                      cx="20"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                  </svg>
+                </button>
+
+                <button type="button" class="users-item__like" data-modal-like>
+                  <!-- <svg class="users-item__like-icon" width="27px" height="24px">
+                    <use xlink:href="./images/like.svg#like"></use>
+                  </svg> -->
+                  <svg
+                    id="like"
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M24.6147 4.44376L24.615 4.44434C25.9521 7.12236 25.4691 10.2148 22.8293 13.7657L22.8279 13.7676C20.7364 16.5995 17.7157 19.4478 13.2845 22.8134L13.2832 22.8143C13.275 22.8206 13.2625 22.8256 13.2477 22.8256C13.2329 22.8256 13.2204 22.8206 13.2121 22.8143L13.211 22.8135C8.7746 19.4422 5.75921 16.569 3.66541 13.7648C1.01812 10.2142 0.535418 7.12208 1.87234 4.44434L1.87263 4.44376C2.77924 2.62402 5.49216 1.01585 8.77399 1.9356C10.3359 2.377 11.6951 3.32236 12.6319 4.61345L13.2437 5.45649L13.8554 4.61345C14.7924 3.32219 16.1519 2.37674 17.714 1.93543L17.7159 1.93488C20.9851 1.002 23.7068 2.62131 24.6147 4.44376Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item">
+              <img
+                class="users-item__image"
+                src="./images/girl-2.jpg"
+                alt="Girl"
+              />
+
+              <div class="users-item__data">
+                <p class="users-item__name">さゆり, 19</p>
+                <div class="users-item__location">
+                  <svg
+                    class="users-item__location-icon"
+                    width="21px"
+                    height="21px"
+                  >
+                    <use xlink:href="./images/location.svg#location"></use>
+                  </svg>
+
+                  <p class="users-item__city">大阪</p>
+                </div>
+              </div>
+
+              <div class="users-item__buttons-wrapper">
+                <button type="button" class="users-item__chat" data-modal-chat>
+                  <svg
+                    id="chat"
+                    width="30"
+                    height="24"
+                    viewBox="0 0 30 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.26623 21.4791L8.02612 21.4122L7.79334 21.5013C6.37358 22.0448 5.30715 22.3655 4.54683 22.5546C5.03169 21.723 5.29391 21.1857 5.43083 20.7858C5.54235 20.46 5.57525 20.2152 5.58022 19.9839C5.58269 19.8686 5.58089 19.802 5.57942 19.7481C5.57753 19.6785 5.57621 19.6298 5.58539 19.5244L5.62036 19.1228L5.30636 18.87C3.00351 17.0163 1.63911 14.5523 1.63911 11.9006C1.63911 9.14953 3.10085 6.60642 5.56063 4.72659C8.02092 2.84636 11.4465 1.6628 15.2438 1.6628C19.0411 1.6628 22.4666 2.84636 24.9269 4.72659C27.3867 6.60642 28.8484 9.14953 28.8484 11.9006C28.8484 14.6517 27.3867 17.1949 24.9269 19.0747C22.4666 20.9549 19.0411 22.1385 15.2438 22.1385C14.3796 22.1385 13.0014 22.078 11.6422 21.9625C10.2663 21.8457 8.98048 21.6779 8.26623 21.4791Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+
+                    <circle
+                      id="dot1"
+                      class="dot"
+                      cx="10"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot2"
+                      class="dot"
+                      cx="15"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot3"
+                      class="dot"
+                      cx="20"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                  </svg>
+                </button>
+
+                <button type="button" class="users-item__like" data-modal-like>
+                  <svg
+                    id="like"
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M24.6147 4.44376L24.615 4.44434C25.9521 7.12236 25.4691 10.2148 22.8293 13.7657L22.8279 13.7676C20.7364 16.5995 17.7157 19.4478 13.2845 22.8134L13.2832 22.8143C13.275 22.8206 13.2625 22.8256 13.2477 22.8256C13.2329 22.8256 13.2204 22.8206 13.2121 22.8143L13.211 22.8135C8.7746 19.4422 5.75921 16.569 3.66541 13.7648C1.01812 10.2142 0.535418 7.12208 1.87234 4.44434L1.87263 4.44376C2.77924 2.62402 5.49216 1.01585 8.77399 1.9356C10.3359 2.377 11.6951 3.32236 12.6319 4.61345L13.2437 5.45649L13.8554 4.61345C14.7924 3.32219 16.1519 2.37674 17.714 1.93543L17.7159 1.93488C20.9851 1.002 23.7068 2.62131 24.6147 4.44376Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item">
+              <img
+                class="users-item__image"
+                src="./images/girl-3.jpg"
+                alt="Girl"
+              />
+
+              <div class="users-item__data">
+                <p class="users-item__name">まり, 25</p>
+                <div class="users-item__location">
+                  <svg
+                    class="users-item__location-icon"
+                    width="21px"
+                    height="21px"
+                  >
+                    <use xlink:href="./images/location.svg#location"></use>
+                  </svg>
+
+                  <p class="users-item__city">大阪</p>
+                </div>
+              </div>
+
+              <div class="users-item__buttons-wrapper">
+                <button type="button" class="users-item__chat" data-modal-chat>
+                  <svg
+                    id="chat"
+                    width="30"
+                    height="24"
+                    viewBox="0 0 30 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.26623 21.4791L8.02612 21.4122L7.79334 21.5013C6.37358 22.0448 5.30715 22.3655 4.54683 22.5546C5.03169 21.723 5.29391 21.1857 5.43083 20.7858C5.54235 20.46 5.57525 20.2152 5.58022 19.9839C5.58269 19.8686 5.58089 19.802 5.57942 19.7481C5.57753 19.6785 5.57621 19.6298 5.58539 19.5244L5.62036 19.1228L5.30636 18.87C3.00351 17.0163 1.63911 14.5523 1.63911 11.9006C1.63911 9.14953 3.10085 6.60642 5.56063 4.72659C8.02092 2.84636 11.4465 1.6628 15.2438 1.6628C19.0411 1.6628 22.4666 2.84636 24.9269 4.72659C27.3867 6.60642 28.8484 9.14953 28.8484 11.9006C28.8484 14.6517 27.3867 17.1949 24.9269 19.0747C22.4666 20.9549 19.0411 22.1385 15.2438 22.1385C14.3796 22.1385 13.0014 22.078 11.6422 21.9625C10.2663 21.8457 8.98048 21.6779 8.26623 21.4791Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+
+                    <circle
+                      id="dot1"
+                      class="dot"
+                      cx="10"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot2"
+                      class="dot"
+                      cx="15"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot3"
+                      class="dot"
+                      cx="20"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                  </svg>
+                </button>
+
+                <button type="button" class="users-item__like" data-modal-like>
+                  <svg
+                    id="like"
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M24.6147 4.44376L24.615 4.44434C25.9521 7.12236 25.4691 10.2148 22.8293 13.7657L22.8279 13.7676C20.7364 16.5995 17.7157 19.4478 13.2845 22.8134L13.2832 22.8143C13.275 22.8206 13.2625 22.8256 13.2477 22.8256C13.2329 22.8256 13.2204 22.8206 13.2121 22.8143L13.211 22.8135C8.7746 19.4422 5.75921 16.569 3.66541 13.7648C1.01812 10.2142 0.535418 7.12208 1.87234 4.44434L1.87263 4.44376C2.77924 2.62402 5.49216 1.01585 8.77399 1.9356C10.3359 2.377 11.6951 3.32236 12.6319 4.61345L13.2437 5.45649L13.8554 4.61345C14.7924 3.32219 16.1519 2.37674 17.714 1.93543L17.7159 1.93488C20.9851 1.002 23.7068 2.62131 24.6147 4.44376Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item">
+              <img
+                class="users-item__image"
+                src="./images/girl-4.jpg"
+                alt="Girl"
+              />
+
+              <div class="users-item__data">
+                <p class="users-item__name">Naomi, 33</p>
+                <div class="users-item__location">
+                  <svg
+                    class="users-item__location-icon"
+                    width="21px"
+                    height="21px"
+                  >
+                    <use xlink:href="./images/location.svg#location"></use>
+                  </svg>
+
+                  <p class="users-item__city">大阪</p>
+                </div>
+              </div>
+
+              <div class="users-item__buttons-wrapper">
+                <button type="button" class="users-item__chat" data-modal-chat>
+                  <svg
+                    id="chat"
+                    width="30"
+                    height="24"
+                    viewBox="0 0 30 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.26623 21.4791L8.02612 21.4122L7.79334 21.5013C6.37358 22.0448 5.30715 22.3655 4.54683 22.5546C5.03169 21.723 5.29391 21.1857 5.43083 20.7858C5.54235 20.46 5.57525 20.2152 5.58022 19.9839C5.58269 19.8686 5.58089 19.802 5.57942 19.7481C5.57753 19.6785 5.57621 19.6298 5.58539 19.5244L5.62036 19.1228L5.30636 18.87C3.00351 17.0163 1.63911 14.5523 1.63911 11.9006C1.63911 9.14953 3.10085 6.60642 5.56063 4.72659C8.02092 2.84636 11.4465 1.6628 15.2438 1.6628C19.0411 1.6628 22.4666 2.84636 24.9269 4.72659C27.3867 6.60642 28.8484 9.14953 28.8484 11.9006C28.8484 14.6517 27.3867 17.1949 24.9269 19.0747C22.4666 20.9549 19.0411 22.1385 15.2438 22.1385C14.3796 22.1385 13.0014 22.078 11.6422 21.9625C10.2663 21.8457 8.98048 21.6779 8.26623 21.4791Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+
+                    <circle
+                      id="dot1"
+                      class="dot"
+                      cx="10"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot2"
+                      class="dot"
+                      cx="15"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot3"
+                      class="dot"
+                      cx="20"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                  </svg>
+                </button>
+
+                <button type="button" class="users-item__like" data-modal-like>
+                  <svg
+                    id="like"
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M24.6147 4.44376L24.615 4.44434C25.9521 7.12236 25.4691 10.2148 22.8293 13.7657L22.8279 13.7676C20.7364 16.5995 17.7157 19.4478 13.2845 22.8134L13.2832 22.8143C13.275 22.8206 13.2625 22.8256 13.2477 22.8256C13.2329 22.8256 13.2204 22.8206 13.2121 22.8143L13.211 22.8135C8.7746 19.4422 5.75921 16.569 3.66541 13.7648C1.01812 10.2142 0.535418 7.12208 1.87234 4.44434L1.87263 4.44376C2.77924 2.62402 5.49216 1.01585 8.77399 1.9356C10.3359 2.377 11.6951 3.32236 12.6319 4.61345L13.2437 5.45649L13.8554 4.61345C14.7924 3.32219 16.1519 2.37674 17.714 1.93543L17.7159 1.93488C20.9851 1.002 23.7068 2.62131 24.6147 4.44376Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item">
+              <img
+                class="users-item__image"
+                src="./images/girl-5.jpg"
+                alt="Girl"
+              />
+
+              <div class="users-item__data">
+                <p class="users-item__name">さゆり, 19</p>
+                <div class="users-item__location">
+                  <svg
+                    class="users-item__location-icon"
+                    width="21px"
+                    height="21px"
+                  >
+                    <use xlink:href="./images/location.svg#location"></use>
+                  </svg>
+
+                  <p class="users-item__city">大阪</p>
+                </div>
+              </div>
+
+              <div class="users-item__buttons-wrapper">
+                <button type="button" class="users-item__chat" data-modal-chat>
+                  <svg
+                    id="chat"
+                    width="30"
+                    height="24"
+                    viewBox="0 0 30 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.26623 21.4791L8.02612 21.4122L7.79334 21.5013C6.37358 22.0448 5.30715 22.3655 4.54683 22.5546C5.03169 21.723 5.29391 21.1857 5.43083 20.7858C5.54235 20.46 5.57525 20.2152 5.58022 19.9839C5.58269 19.8686 5.58089 19.802 5.57942 19.7481C5.57753 19.6785 5.57621 19.6298 5.58539 19.5244L5.62036 19.1228L5.30636 18.87C3.00351 17.0163 1.63911 14.5523 1.63911 11.9006C1.63911 9.14953 3.10085 6.60642 5.56063 4.72659C8.02092 2.84636 11.4465 1.6628 15.2438 1.6628C19.0411 1.6628 22.4666 2.84636 24.9269 4.72659C27.3867 6.60642 28.8484 9.14953 28.8484 11.9006C28.8484 14.6517 27.3867 17.1949 24.9269 19.0747C22.4666 20.9549 19.0411 22.1385 15.2438 22.1385C14.3796 22.1385 13.0014 22.078 11.6422 21.9625C10.2663 21.8457 8.98048 21.6779 8.26623 21.4791Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+
+                    <circle
+                      id="dot1"
+                      class="dot"
+                      cx="10"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot2"
+                      class="dot"
+                      cx="15"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot3"
+                      class="dot"
+                      cx="20"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                  </svg>
+                </button>
+
+                <button type="button" class="users-item__like" data-modal-like>
+                  <svg
+                    id="like"
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M24.6147 4.44376L24.615 4.44434C25.9521 7.12236 25.4691 10.2148 22.8293 13.7657L22.8279 13.7676C20.7364 16.5995 17.7157 19.4478 13.2845 22.8134L13.2832 22.8143C13.275 22.8206 13.2625 22.8256 13.2477 22.8256C13.2329 22.8256 13.2204 22.8206 13.2121 22.8143L13.211 22.8135C8.7746 19.4422 5.75921 16.569 3.66541 13.7648C1.01812 10.2142 0.535418 7.12208 1.87234 4.44434L1.87263 4.44376C2.77924 2.62402 5.49216 1.01585 8.77399 1.9356C10.3359 2.377 11.6951 3.32236 12.6319 4.61345L13.2437 5.45649L13.8554 4.61345C14.7924 3.32219 16.1519 2.37674 17.714 1.93543L17.7159 1.93488C20.9851 1.002 23.7068 2.62131 24.6147 4.44376Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item">
+              <img
+                class="users-item__image"
+                src="./images/girl-6.jpg"
+                alt="Girl"
+              />
+
+              <div class="users-item__data">
+                <p class="users-item__name">Ayako, 21</p>
+                <div class="users-item__location">
+                  <svg
+                    class="users-item__location-icon"
+                    width="21px"
+                    height="21px"
+                  >
+                    <use xlink:href="./images/location.svg#location"></use>
+                  </svg>
+
+                  <p class="users-item__city">大阪</p>
+                </div>
+              </div>
+
+              <div class="users-item__buttons-wrapper">
+                <button type="button" class="users-item__chat" data-modal-chat>
+                  <svg
+                    id="chat"
+                    width="30"
+                    height="24"
+                    viewBox="0 0 30 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.26623 21.4791L8.02612 21.4122L7.79334 21.5013C6.37358 22.0448 5.30715 22.3655 4.54683 22.5546C5.03169 21.723 5.29391 21.1857 5.43083 20.7858C5.54235 20.46 5.57525 20.2152 5.58022 19.9839C5.58269 19.8686 5.58089 19.802 5.57942 19.7481C5.57753 19.6785 5.57621 19.6298 5.58539 19.5244L5.62036 19.1228L5.30636 18.87C3.00351 17.0163 1.63911 14.5523 1.63911 11.9006C1.63911 9.14953 3.10085 6.60642 5.56063 4.72659C8.02092 2.84636 11.4465 1.6628 15.2438 1.6628C19.0411 1.6628 22.4666 2.84636 24.9269 4.72659C27.3867 6.60642 28.8484 9.14953 28.8484 11.9006C28.8484 14.6517 27.3867 17.1949 24.9269 19.0747C22.4666 20.9549 19.0411 22.1385 15.2438 22.1385C14.3796 22.1385 13.0014 22.078 11.6422 21.9625C10.2663 21.8457 8.98048 21.6779 8.26623 21.4791Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+
+                    <circle
+                      id="dot1"
+                      class="dot"
+                      cx="10"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot2"
+                      class="dot"
+                      cx="15"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                    <circle
+                      id="dot3"
+                      class="dot"
+                      cx="20"
+                      cy="12"
+                      r="2"
+                    ></circle>
+                  </svg>
+                </button>
+
+                <button type="button" class="users-item__like" data-modal-like>
+                  <svg
+                    id="like"
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <path
+                      d="M24.6147 4.44376L24.615 4.44434C25.9521 7.12236 25.4691 10.2148 22.8293 13.7657L22.8279 13.7676C20.7364 16.5995 17.7157 19.4478 13.2845 22.8134L13.2832 22.8143C13.275 22.8206 13.2625 22.8256 13.2477 22.8256C13.2329 22.8256 13.2204 22.8206 13.2121 22.8143L13.211 22.8135C8.7746 19.4422 5.75921 16.569 3.66541 13.7648C1.01812 10.2142 0.535418 7.12208 1.87234 4.44434L1.87263 4.44376C2.77924 2.62402 5.49216 1.01585 8.77399 1.9356C10.3359 2.377 11.6951 3.32236 12.6319 4.61345L13.2437 5.45649L13.8554 4.61345C14.7924 3.32219 16.1519 2.37674 17.714 1.93543L17.7159 1.93488C20.9851 1.002 23.7068 2.62131 24.6147 4.44376Z"
+                      stroke="#AA0808"
+                      stroke-width="1.51163"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="users-registration">
+          <h3 class="users-registration__title">閲覧には登録が必要です</h3>
+
+          <button
+            class="register-button"
+            type="button"
+            data-modal-register-open
+          >
+            始めよう
+          </button>
+
+          <img
+            class="users-registration__decor-image"
+            src="./images/branch-small.png"
+            alt="branch"
+            width="476px"
+          />
+        </div>
+      </section>
+
+      <section class="feedbacks-section">
+        <h2 class="feedbacks-title">利用者からのご意見・ご感想</h2>
+
+        <div class="swiper feedbacksSwiper">
+          <ul class="swiper-wrapper">
+            <li class="feedback-item swiper-slide">
+              <h2 class="feedbacks-title__mobile">
+                利用者からのご意見・ご感想
+              </h2>
+
+              <img
+                class="feedback-item__image"
+                src="./images/customer-1.png"
+                alt="Customer Photo"
+                width="100px"
+              />
+
+              <div class="feedback-item__text-wrapper">
+                <p class="feedback-item__text">
+                  このサイトに登録した当時は、あまり期待していませんでした。でも数週間後には、登録したことは最良の判断だったと気が付きました。素敵な人々に出会い、同じような物事が好きな女性にお会いすることさえできましたしね。サイトのインターフェースはすごく使いやすく、マッチングアルゴリズムの結果も良いです。ちゃんと恋愛したい人には、誰にでもおすすめできるサイトです。
+                </p>
+
+                <div class="feedback-item__customer-data">
+                  <p class="feedback-item__customer-name">けんた</p>
+                  <p class="feedback-item__customer-profession">エンジニア</p>
+                </div>
+              </div>
+
+              <div class="feedback-arrows">
+                <svg class="feedback__arrow-left" width="24px" height="9px">
+                  <use
+                    xlink:href="./images/red-arrow-right.svg#arrow-right"
+                  ></use>
+                </svg>
+                <svg class="feedback__arrow-right" width="24px" height="9px">
+                  <use
+                    xlink:href="./images/red-arrow-right.svg#arrow-right"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="feedback-item swiper-slide">
+              <h2 class="feedbacks-title__mobile">
+                利用者からのご意見・ご感想
+              </h2>
+
+              <img
+                class="feedback-item__image"
+                src="./images/customer-2.png"
+                alt="Customer Photo"
+                width="100px"
+              />
+
+              <div class="feedback-item__text-wrapper">
+                <p class="feedback-item__text">
+                  このデーティングサイトのおかげで、また愛を信じられるようになりました。離婚後、誰かと付き合う気になれなかった中、このサイトでサポートや理解を得られました。ユーザーのプロフィールは相手のことを知るには十分な情報が書かれているし、気兼ねなく会話をスタートできる機能がサイトには備わっています。このサイトのおかげで、僕の人生を支え、応援してくれる友人のような女性に出会うことができました。
+                </p>
+
+                <div class="feedback-item__customer-data">
+                  <p class="feedback-item__customer-name">武志</p>
+                  <p class="feedback-item__customer-profession">医者</p>
+                </div>
+              </div>
+
+              <div class="feedback-arrows">
+                <svg class="feedback__arrow-left" width="24px" height="9px">
+                  <use
+                    xlink:href="./images/red-arrow-right.svg#arrow-right"
+                  ></use>
+                </svg>
+                <svg class="feedback__arrow-right" width="24px" height="9px">
+                  <use
+                    xlink:href="./images/red-arrow-right.svg#arrow-right"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="feedback-item swiper-slide">
+              <h2 class="feedbacks-title__mobile">
+                利用者からのご意見・ご感想
+              </h2>
+
+              <img
+                class="feedback-item__image"
+                src="./images/customer-3.png"
+                alt="Customer Photo"
+                width="100px"
+              />
+
+              <div class="feedback-item__text-wrapper">
+                <p class="feedback-item__text">
+                  このサイトで、自分が探してた真剣交際を始めることができました。別の出会い系サイトで何度も失敗した後このサイトに辿り着き、自分と同じ価値観や興味を共有できる女性にやっと出会うことができました。マッチしてすぐに仲良くなり、友人以上の関係に発展しました。プロフィールがしっかりと管理されているので、このサイトで自分の時間を無駄にしたと思ったことがありません。駆け引きなしの本当の恋愛を求めている人に勧めたいサイトです。
+                </p>
+
+                <div class="feedback-item__customer-data">
+                  <p class="feedback-item__customer-name">Kenji</p>
+                  <p class="feedback-item__customer-profession">教師</p>
+                </div>
+              </div>
+
+              <div class="feedback-arrows">
+                <svg class="feedback__arrow-left" width="24px" height="9px">
+                  <use
+                    xlink:href="./images/red-arrow-right.svg#arrow-right"
+                  ></use>
+                </svg>
+                <svg class="feedback__arrow-right" width="24px" height="9px">
+                  <use
+                    xlink:href="./images/red-arrow-right.svg#arrow-right"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="register-section">
+        <div class="register-wrapper">
+          <h2 class="register-title">
+            運命の人に会いたい？急いで今すぐご登録を！
+          </h2>
+
+          <button
+            class="register-button"
+            type="button"
+            data-modal-register-open
+          >
+            始めよう
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="story-gallery__section">
+      <a class="header" href="./index.html">
+        <div class="icon-container">
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+        </div>
+
+        <p class="logo-text">Deaichat</p>
+      </a>
+
+      <div class="container-basic story-gallery__container">
+        <h3 class="story-gallery__title">交際実績</h3>
+
+        <div class="swiper storyGallerySwiper">
+          <ul class="swiper-wrapper">
+            <li class="story-gallery__item swiper-slide">
+              <h4 class="story-gallery__item-title mobile">
+                隆さんと沙友里さん
+              </h4>
+
+              <div class="story-gallery__image-wrapper">
+                <img
+                  class="story-gallery__image"
+                  src="./images/story-1.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+                <div class="story-gallery__navigation-buttons">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="story-gallery__text-wrapper">
+                <h4 class="story-gallery__item-title">隆さんと沙友里さん</h4>
+
+                <p class="story-gallery__descr">
+                  隆さんと沙友里さんは、マッチングサイトで偶然出会いました。共通の趣味や興味を知ることで、お互いへの理解が深まりました。初デートの時、時間も気にせず会話に夢中になりました。隆さんは沙友里さんの明るさや一緒に楽しめるところに惹かれ、沙友里さんは、隆さんの優しさや誠実さが好きでした。<br />
+                  このネット上での出会いにより、２人は付き合い始め、お互いにとってかけがえのない関係となりました。
+                </p>
+
+                <div class="story-gallery__navigation-buttons mobile">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="story-gallery__item swiper-slide">
+              <h4 class="story-gallery__item-title mobile">
+                けんじさんとあやこさん
+              </h4>
+
+              <div class="story-gallery__image-wrapper">
+                <img
+                  class="story-gallery__image"
+                  src="./images/story-2.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+                <div class="story-gallery__navigation-buttons">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="story-gallery__text-wrapper">
+                <h4 class="story-gallery__item-title">
+                  けんじさんとあやこさん
+                </h4>
+
+                <p class="story-gallery__descr">
+                  けんじさんとあやこさんは、デーティングサイトで知り合いました。本と旅行が好きなけんじさんのプロフィール写真に、あやこさんは興味を持ちました。会話をスタートさせると、アート、料理、深い話を２人とも好むことが分かりました。<br />
+                  初めてのデートにはロマンチックなカフェに行き、会うとすぐにお互いを深く知ることができました。将来についてや人生観について語り合い、２人とも相手の内面の美しさに驚いたそうです。あやこさんは、けんじさんの繊細さや細かい部分への気遣いを素敵だと思い、けんじさんは、あやこさんの知性や内面の美しさに魅了されました。<br />
+                  サイトでの出会いは、お互いを尊重し理解し合うような真剣交際へとすぐに発展しました。
+                </p>
+
+                <div class="story-gallery__navigation-buttons mobile">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="story-gallery__item swiper-slide">
+              <h4 class="story-gallery__item-title mobile">
+                HiroshiさんとMiekoさん
+              </h4>
+
+              <div class="story-gallery__image-wrapper">
+                <img
+                  class="story-gallery__image"
+                  src="./images/story-3.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+                <div class="story-gallery__navigation-buttons">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="story-gallery__text-wrapper">
+                <h4 class="story-gallery__item-title">
+                  HiroshiさんとMiekoさん
+                </h4>
+
+                <p class="story-gallery__descr">
+                  HiroshiさんとMiekoさんは、マッチングサイトで知り合いました。最初のメッセージから、強く惹かれあい、毎日連絡を取り合いました。共通の趣味や興味があることが分かると、関係性がどんどんと深まりました。数週間後ついに初デートに出かけ、自然の中を歩いて楽しい時間を過ごしました。HiroshiさんとMiekoさんは、お互いが相手と一緒にいることが楽だと感じたので、素敵なスタートだと思ったそうです。<br />
+                  <br />
+                  それ以降頻繁に会うようになり、お互いへの気持ちはどんどん深まりました。オンライン上での出会いからお互いに愛を感じるようになり、現在HiroshiさんとMiekoさんは、ラブラブな交際を続けています。
+                  サイトでの出会いは、お互いを尊重し理解し合うような真剣交際へとすぐに発展しました。
+                </p>
+
+                <div class="story-gallery__navigation-buttons mobile">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="story-gallery__item swiper-slide">
+              <h4 class="story-gallery__item-title mobile">
+                RyoさんとYukiさん
+              </h4>
+
+              <div class="story-gallery__image-wrapper">
+                <img
+                  class="story-gallery__image"
+                  src="./images/story-4.jpg"
+                  alt="man and woman"
+                  width="100%"
+                />
+                <div class="story-gallery__navigation-buttons">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="story-gallery__text-wrapper">
+                <h4 class="story-gallery__item-title">RyoさんとYukiさん</h4>
+
+                <p class="story-gallery__descr">
+                  RyoさんとYukiさんは、忙しい平日にデーティングサイトでマッチしました。Ryoさんは、Yukiさんのプロフィール写真に一目ぼれしました。笑顔が忘れられなかったそうです。会話を通して、共通の趣味や人生観を持つことが分かりました。<br />
+                  <br />
+
+                  初デート中、RyoさんはYukiさんの明るさや正直なところを素敵だと思い、Yukiさんは、Ryoさんの思いやりや楽しさに惹かれました。お互いを知れば知るほど絆が強まりました。Ryoさんは２人で過ごせたことを喜び、YukiさんはRyoさんとの会話を楽しみました。<br />
+                  <br />
+                  オンラインでの出会いは、愛溢れる恋愛へと発展し、RyoさんとYukiさんは、お互いを支え合う関係になりました。
+                </p>
+
+                <div class="story-gallery__navigation-buttons mobile">
+                  <button class="story-gallery__prew-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-left.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+
+                  <button class="story-gallery__next-slide" type="button">
+                    <svg
+                      class="prew-slide__arrow-icon"
+                      width="33px"
+                      height="8px"
+                    >
+                      <use
+                        xlink:href="./images/story-gallery-arrow-right.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <img
+          class="story-gallery__decor-image"
+          src="./images/story-gallery-decor-branch.png"
+          alt="branch"
+          width="409px"
+        />
+      </div>
+
+      <div class="register-section">
+        <div class="register-wrapper">
+          <h2 class="register-title">
+            運命の人に会いたい？急いで今すぐご登録を！
+          </h2>
+
+          <button
+            class="register-button"
+            type="button"
+            data-modal-register-open
+          >
+            始めよう
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer-copyright">Copyright ©2024 All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="javascript:void(0)" class="footer-link"
+          >プライバシーポリシー</a
+        >
+        <a href="javascript:void(0)" class="footer-link">利用規約</a>
+        <a href="javascript:void(0)" class="footer-link">解約</a>
+      </div>
+
+      <img
+        class="footer__decor-image"
+        src="./images/branch-big.png"
+        alt="branch"
+        width="700px"
+      />
+    </footer>
+
+    <!================= Modals =================>
+
+    <!-- Chat and Like Modal -->
+    <div class="backdrop-modal is-hidden" data-modal>
+      <div class="modal-window">
+        <p class="modal-window__text">
+          登録後に女の子に「いいね」を送りましょう
+        </p>
+
+        <button
+          class="modal-button"
+          type="button"
+          data-close-modal-open-register
+        >
+          始めよう
+        </button>
+
+        <button class="modal-window__btn-close" type="button" data-modal-close>
+          <svg class="modal-window__close-icon" width="16px" height="16px">
+            <use xlink:href="./images/icon-close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="backdrop-modal is-hidden" data-modal-register>
+      <div class="modal-window">
+        <p class="modal-register__text">
+          運命の人に会いたい？急いで今すぐご登録を！
+        </p>
+
+        <!-- form -->
+
+        <form action="#" method="POST" onsubmit="">
+          <div class="box-form">
+            <label for="email">
+              <span class="form-label">Email</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@example.jp"
+                value=""
+                required
+              />
+            </label>
+          </div>
+
+          <div class="box-form">
+            <label for="password">
+              <span class="form-label">パスワード</span>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="パスワード"
+                value=""
+                required
+              />
+            </label>
+          </div>
+
+          <button class="modal-button" type="submit">始めよう</button>
+        </form>
+
+        <!-- form end -->
+
+        <button
+          class="modal-window__btn-close"
+          type="button"
+          data-modal-register-close
+        >
+          <svg class="modal-window__close-icon" width="16px" height="16px">
+            <use xlink:href="./images/icon-close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!================= Leaves Animation =================>
+
+    <div id="leaves">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+
+    <!================= Scripts =================>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swipers, Story Gallery Swiper Handler -->
+
+    <script type="module" src="./js/swiperHandler.js"></script>
+
+    <!-- Smooth Scroll Initialize-->
+
+    <script type="module" src="./js/smoothScroll.js"></script>
+
+    <!-- Chat And Like Animate Handler-->
+
+    <script type="module" src="./js/chatAndLikeAnimateHandler.js"></script>
+
+    <!-- Modals Handler-->
+
+    <script type="module" src="./js/modalsHandler.js"></script>
+  </body>
+</html>

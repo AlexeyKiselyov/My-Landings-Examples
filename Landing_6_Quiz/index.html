@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./img/favicon.webp" rel="shortcut icon" type="image/x-icon" />
+    <title>Match with the Best</title>
+
+    <!-- jQuery -->
+    <script src="./js/1_jquery.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;700&family=Alice&family=Bad+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/1_modern-normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/2_styles.css" />
+
+    <!-- Preload images -->
+    <link rel="preload" href="./img/mail.svg" as="image" />
+  </head>
+
+  <body>
+    <!-- Step Start -->
+    <div class="container-basic hero-container" data-step>
+      <div class="step__text-wrapper hero-content__wrapper">
+        <h2 class="step-title hero-title">
+          <span>Looking for a spark</span> that leads to something unforgettable?
+        </h2>
+        <p class="hero-text">Take the quiz and meet your perfect match!</p>
+      </div>
+
+      <div class="hero-image__wrapper">
+        <div class="love"></div>
+        <div class="love-1"></div>
+        <div class="love-2"></div>
+      </div>
+
+      <div class="hero-button__wrapper">
+        <button
+          type="button"
+          class="step-button event-tracker"
+          data-event="button1_clicked"
+          data-next-step
+        >
+          Match with the Best
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="container-basic" data-step="1" style="display: none">
+      <div class="step-content__wrapper">
+        <h2 class="step-title quiz step-first__title">What age should your partner be?</h2>
+      </div>
+
+      <ul class="step__quiz-list">
+        <li class="step__quiz-item" data-quiz-answer="1-1">
+          <img
+            class="step__quiz-image age-image"
+            src="./img/step-1-1.jpg"
+            alt="girl"
+            width="150px"
+          />
+          <p class="step__quiz-text">18-25</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="1-2">
+          <img
+            class="step__quiz-image age-image"
+            src="./img/step-1-2.jpg"
+            alt="girl"
+            width="150px"
+          />
+          <p class="step__quiz-text">25-35</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="1-3">
+          <img
+            class="step__quiz-image age-image"
+            src="./img/step-1-3.jpg"
+            alt="girl"
+            width="150px"
+          />
+          <p class="step__quiz-text">35-45</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="1-4">
+          <img
+            class="step__quiz-image age-image"
+            src="./img/step-1-4.jpg"
+            alt="girl"
+            width="150px"
+          />
+          <p class="step__quiz-text">45+</p>
+        </li>
+      </ul>
+
+      <div class="control-buttons__wrapper">
+        <button
+          type="button"
+          class="step-button secondary event-tracker"
+          data-event="skip1_clicked"
+          data-next-step
+          data-skip="1"
+        >
+          SKIP
+        </button>
+        <button type="button" class="step-button" data-next-step>NEXT</button>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="container-basic" data-step="2" style="display: none">
+      <div class="step-content__wrapper">
+        <h2 class="step-title quiz">What do you find most attractive in a woman?</h2>
+      </div>
+
+      <ul class="step__quiz-list">
+        <li class="step__quiz-item" data-quiz-answer="2-1">
+          <img class="step__quiz-image" src="./img/step-2-1.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Her body – physical attraction is key.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="2-2">
+          <img class="step__quiz-image" src="./img/step-2-2.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Her voice – a seductive tone can drive me crazy.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="2-3">
+          <img class="step__quiz-image" src="./img/step-2-3.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Her behavior – attitude make all the difference.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="2-4">
+          <img class="step__quiz-image" src="./img/step-2-4.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">
+            It’s a mix of everything – personality, looks, and chemistry.
+          </p>
+        </li>
+      </ul>
+
+      <div class="control-buttons__wrapper">
+        <button
+          type="button"
+          class="step-button secondary event-tracker"
+          data-event="skip2_clicked"
+          data-next-step
+          data-skip="2"
+        >
+          SKIP
+        </button>
+        <button type="button" class="step-button" data-next-step>NEXT</button>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="container-basic" data-step="3" style="display: none">
+      <div class="step-content__wrapper">
+        <h2 class="step-title quiz">
+          Does the idea of watching an erotic video with your partner turn you on?
+        </h2>
+      </div>
+
+      <ul class="step__quiz-list">
+        <li class="step__quiz-item" data-quiz-answer="3-1">
+          <img class="step__quiz-image" src="./img/step-3-1.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Absolutely, it’s a great way to spice things up.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="3-2">
+          <img class="step__quiz-image" src="./img/step-3-2.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Maybe, if my partner is into it.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="3-3">
+          <img class="step__quiz-image" src="./img/step-3-3.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">I’d rather keep things natural and spontaneous.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="3-4">
+          <img class="step__quiz-image" src="./img/step-3-4.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">No, I’m not into that.</p>
+        </li>
+      </ul>
+
+      <div class="control-buttons__wrapper">
+        <button
+          type="button"
+          class="step-button secondary event-tracker"
+          data-event="skip3_clicked"
+          data-next-step
+          data-skip="3"
+        >
+          SKIP
+        </button>
+        <button type="button" class="step-button" data-next-step>NEXT</button>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="container-basic" data-step="4" style="display: none">
+      <div class="step-content__wrapper">
+        <h2 class="step-title quiz">
+          Have you ever had an intimate experience with two women at the same time?
+        </h2>
+      </div>
+
+      <ul class="step__quiz-list">
+        <li class="step__quiz-item" data-quiz-answer="4-1">
+          <img class="step__quiz-image" src="./img/step-4-1.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Yes, and it was unforgettable!</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="4-2">
+          <img class="step__quiz-image" src="./img/step-4-2.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">Not yet, but I’d love to try.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="4-3">
+          <img class="step__quiz-image" src="./img/step-4-3.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">I’ve had the opportunity, but I turned it down.</p>
+        </li>
+
+        <li class="step__quiz-item" data-quiz-answer="4-4">
+          <img class="step__quiz-image" src="./img/step-4-4.jpg" alt="girl" width="130px" />
+          <p class="step__quiz-text">No, and I have no interest in that.</p>
+        </li>
+      </ul>
+
+      <div class="control-buttons__wrapper">
+        <button
+          type="button"
+          class="step-button secondary event-tracker"
+          data-event="skip4_clicked"
+          data-next-step
+          data-skip
+          data-quiz-end
+        >
+          SKIP
+        </button>
+        <button type="button" class="step-button" data-next-step data-quiz-end>NEXT</button>
+      </div>
+    </div>
+
+    <!-- Step  Final -->
+    <form action="#" method="POST" onsubmit="" data-step data-step-final style="display: none">
+      <div class="container-basic final-step__container">
+        <div class="alllove">
+          <img class="love_1 love1" src="./img/heart.svg" alt="heart" />
+          <img class="love_1 love2" src="./img/heart.svg" alt="heart" />
+          <img class="love_1 love3" src="./img/heart.svg" alt="heart" />
+          <img class="love_1 love4" src="./img/heart.svg" alt="heart" />
+          <img class="love_1 love5" src="./img/heart.svg" alt="heart" />
+
+          <h2>Loading Love...</h2>
+        </div>
+
+        <div class="step-content__wrapper">
+          <h2 class="step-title final-step__title">Excitement is <span>one step away.</span></h2>
+
+          <p class="final-step__text">
+            Enter your email and meet someone who’s just as curious as you.
+          </p>
+
+          <div class="box-form">
+            <input
+              list="emailSuggestions"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email to begin"
+              value=""
+              required
+              autocomplete="email"
+            />
+
+            <!-- Email input helper -->
+            <datalist id="emailSuggestions">
+              <!-- An empty list to start with -->
+            </datalist>
+            <!------------------------>
+          </div>
+        </div>
+
+        <div class="final-step__button-wrapper">
+          <button type="button" class="step-button" id="redirect-button">
+            Match with the Best
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Loader -->
+    <div class="backdrop is-hidden">
+      <div class="loader-wrapper">
+        <span class="loader"></span>
+      </div>
+    </div>
+
+    <!================= Scripts =================>
+
+    <script type="module" src="./js/2_index.js"></script>
+    <script type="module" src="./js/3_getTrackerAndRedirect.js"></script>
+    <script type="module" src="./js/4_emailInputHelper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>BrandName</title>
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- SmoothScroll -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-basic header-container">
+        <a href="./index.html">
+          <img
+            class="header-logo"
+            src="./images/logo-white.png"
+            alt="BelgiumAmour Logo"
+            width="235px"
+          />
+        </a>
+
+        <ul class="header__lang-list">
+          <li class="header__lang-item" data-lang-selector="en">
+            <img
+              class="header-flag"
+              src="./images/flag-usa.svg"
+              alt="Flag"
+              width="32px"
+            />
+          </li>
+
+          <li class="header__lang-item" data-lang-selector="nl">
+            <img
+              class="header-flag"
+              src="./images/flag-nl.svg"
+              alt="Flag"
+              width="32px"
+            />
+          </li>
+
+          <li class="header__lang-item" data-lang-selector="fr">
+            <img
+              class="header-flag"
+              src="./images/flag-fr.svg"
+              alt="Flag"
+              width="32px"
+            />
+          </li>
+
+          <li class="header__lang-item" data-lang-selector="de">
+            <img
+              class="header-flag"
+              src="./images/flag-de.svg"
+              alt="Flag"
+              width="32px"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container-basic hero-container">
+          <h1 class="hero-title">
+            <span class="hero-title-line1-tr">Vind je</span> <br />
+            <span class="accent hero-title-line2-tr">Uiste Match</span>
+            <span class="hero-title-line3-tr">hier</span>
+          </h1>
+
+          <h2 class="hero-descr hero-descr-tr">
+            Ontmoet jouw prachtige liefde!
+          </h2>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <section class="calculator-section">
+          <div class="calculator-wrapper">
+            <div class="calculator-location">
+              <img
+                class="calculator-icon"
+                src="./images/location-arrow.svg"
+                alt="Location Arrow"
+                width="16px"
+              />
+              <p class="calculator-location__text calculator-location__text-tr">
+                Mijn huidige locatie
+              </p>
+            </div>
+
+            <div class="slider-distance__container">
+              <p class="slider-distance__lable slider-distance__lable-tr">
+                Max. afstand
+              </p>
+
+              <input
+                type="range"
+                id="js-distance-range"
+                min="0"
+                max="40"
+                step="1"
+                value="20"
+                class="slider-distance__input"
+              />
+              <div id="js-distance-value-display">20km</div>
+            </div>
+
+            <div class="slider-age__container">
+              <p class="slider-age__label slider-age__label-tr">
+                Leeftijdscategorie
+              </p>
+
+              <input
+                type="range"
+                id="js-age-range-min"
+                min="0"
+                max="80"
+                step="1"
+                value="40"
+                class="slider-age__input"
+              />
+
+              <input
+                type="range"
+                id="js-age-range-max"
+                min="0"
+                max="80"
+                step="1"
+                value="50"
+                class="slider-age__input"
+              />
+
+              <div id="js-age-range-value-display">40-50</div>
+            </div>
+
+            <button
+              class="find-partner-button"
+              type="button"
+              data-modal-find-partner-open
+            >
+              <span class="find-partner-button-tr">Vind je partner</span>
+
+              <img src="./images/search.svg" alt="Search" width="22px" />
+            </button>
+          </div>
+        </section>
+
+        <div class="container-basic about-container">
+          <h2 class="about-title about-title-tr">Hoe het werkt</h2>
+
+          <ul class="about-list">
+            <li class="about-item">
+              <p class="about-item__title about-item__title-1-tr">
+                Profiel aanmaken
+              </p>
+
+              <p class="about-item__descr about-item__descr-1-tr">
+                Vul je profiel in om anderen meer over jezelf te laten weten.
+                Deel je interesses, hobby's en dromen om een geschikte partner
+                te vinden
+              </p>
+            </li>
+
+            <li class="about-item">
+              <p class="about-item__title about-item__title-2-tr">
+                Vind Je Match
+              </p>
+
+              <p class="about-item__descr about-item__descr-2-tr">
+                Gebruik onze eenvoudige zoekfuncties om mensen te vinden die
+                jouw interesses delen. Maak contact met de mensen die het beste
+                bij je passen
+              </p>
+            </li>
+
+            <li class="about-item">
+              <p class="about-item__title about-item__title-3-tr">
+                Profielinformatie Opvragen
+              </p>
+
+              <p class="about-item__descr about-item__descr-3-tr">
+                Blader door de profielen van andere gebruikers. Ontdek hun
+                interesses, hobby's en levensdoelen om te zien wie bij jou past.
+              </p>
+            </li>
+
+            <li class="about-item">
+              <p class="about-item__title about-item__title-4-tr">
+                Begin met Daten
+              </p>
+
+              <p class="about-item__descr about-item__descr-4-tr">
+                Als je eenmaal een interessant iemand hebt gevonden, begin dan
+                te chatten en ontmoetingen te plannen. Laat jullie relatie
+                groeien en veranderen in iets bijzonders
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="users-section">
+        <div class="container-basic users-container">
+          <h2 class="users-title users-title-tr">Alleen Echte Mensen</h2>
+
+          <p class="users-descr nl users-descr-tr">
+            Geregistreerde gebruikers worden geverifieerd via foto en mobiele
+            telefoon, dus je hoeft je geen zorgen te maken of iemand echt of nep
+            is
+          </p>
+
+          <ul class="users-list">
+            <li class="users-item" data-girl-name="Olivia">
+              <img
+                class="users-item__image"
+                src="./images/users-girl-1.jpg"
+                alt="Girl"
+                width="100%"
+              />
+
+              <div class="users-item__gradient"></div>
+
+              <p class="users-item__name">Olivia 41</p>
+
+              <p class="users-item__status users-item__status-tr">Nu Actief</p>
+
+              <img
+                class="users-item__flag"
+                src="./images/users-flag-bel.svg"
+                alt="Flag"
+                width="30px"
+              />
+
+              <div class="users-item__buttons-wrapper">
+                <button
+                  type="button"
+                  class="users-item__close-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-close-icon.svg"
+                    alt="Close icon"
+                    width="19px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__like-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-heart-icon.svg"
+                    alt="Heart icon"
+                    width="40px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__favorite-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-star-icon.svg"
+                    alt="Heart icon"
+                    width="28px"
+                  />
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item" data-girl-name="Emma">
+              <img
+                class="users-item__image"
+                src="./images/users-girl-2.jpg"
+                alt="Girl"
+                width="100%"
+              />
+
+              <div class="users-item__gradient"></div>
+
+              <p class="users-item__name">Emma 39</p>
+
+              <p class="users-item__status users-item__status-tr">Nu Actief</p>
+
+              <img
+                class="users-item__flag"
+                src="./images/users-flag-bel.svg"
+                alt="Flag"
+                width="30px"
+              />
+
+              <div class="users-item__buttons-wrapper">
+                <button
+                  type="button"
+                  class="users-item__close-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-close-icon.svg"
+                    alt="Close icon"
+                    width="19px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__like-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-heart-icon.svg"
+                    alt="Heart icon"
+                    width="40px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__favorite-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-star-icon.svg"
+                    alt="Heart icon"
+                    width="28px"
+                  />
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item" data-girl-name="Ella">
+              <img
+                class="users-item__image"
+                src="./images/users-girl-3.jpg"
+                alt="Girl"
+                width="100%"
+              />
+
+              <div class="users-item__gradient"></div>
+
+              <p class="users-item__name">Ella 46</p>
+
+              <p class="users-item__status users-item__status-tr">Nu Actief</p>
+
+              <img
+                class="users-item__flag"
+                src="./images/users-flag-bel.svg"
+                alt="Flag"
+                width="30px"
+              />
+
+              <div class="users-item__buttons-wrapper">
+                <button
+                  type="button"
+                  class="users-item__close-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-close-icon.svg"
+                    alt="Close icon"
+                    width="19px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__like-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-heart-icon.svg"
+                    alt="Heart icon"
+                    width="40px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__favorite-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-star-icon.svg"
+                    alt="Heart icon"
+                    width="28px"
+                  />
+                </button>
+              </div>
+            </li>
+
+            <li class="users-item" data-girl-name="Alice">
+              <img
+                class="users-item__image"
+                src="./images/users-girl-4.jpg"
+                alt="Girl"
+                width="100%"
+              />
+
+              <div class="users-item__gradient"></div>
+
+              <p class="users-item__name">Alice 44</p>
+
+              <p class="users-item__status users-item__status-tr">Nu Actief</p>
+
+              <img
+                class="users-item__flag"
+                src="./images/users-flag-bel.svg"
+                alt="Flag"
+                width="30px"
+              />
+
+              <div class="users-item__buttons-wrapper">
+                <button
+                  type="button"
+                  class="users-item__close-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-close-icon.svg"
+                    alt="Close icon"
+                    width="19px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__like-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-heart-icon.svg"
+                    alt="Heart icon"
+                    width="40px"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="users-item__favorite-button"
+                  data-users-button
+                >
+                  <img
+                    class="users-item__button-image"
+                    src="./images/users-star-icon.svg"
+                    alt="Heart icon"
+                    width="28px"
+                  />
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <p class="users__register-text nl users__register-text-tr">
+            We hebben meer dan 4000+ meisjes geregistreerd op onze site. Meld je
+            aan om jouw match te ontmoeten
+          </p>
+
+          <button
+            class="get-started__button"
+            type="button"
+            data-modal-register-open
+          >
+            <span class="get-started__button-tr">Begin Nu</span>
+            <img src="./images/arrow-right.svg" alt="Arrow" />
+          </button>
+        </div>
+      </section>
+
+      <section class="cities-section">
+        <div class="container-basic">
+          <h2 class="cities-title cities-title-tr">
+            Chat. Plezier. Geniet van je leven
+          </h2>
+
+          <p class="cities-descr nl cities-descr-tr">
+            Vind je soulmate overal in België. Ontdek de charmante en unieke
+            matches die elke stad te bieden heeft
+          </p>
+        </div>
+        <div class="cities-container">
+          <div class="swiper citiesSwiper">
+            <ul class="swiper-wrapper">
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Brussels.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location1-tr" data-city-name
+                      >Brussel</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-1-tr">
+                    *Wijken in Brussel
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Antwerp.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location2-tr" data-city-name
+                      >Antwerpen</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-2-tr">
+                    *Wijken in Antwerpen
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Ghent.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location3-tr" data-city-name
+                      >Gent</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-3-tr">
+                    *Wijken in Gent
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Bruges.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location4-tr" data-city-name
+                      >Brugge</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-4-tr">
+                    *Wijken in Brugge
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Liège.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location5-tr" data-city-name
+                      >Luik</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-5-tr">
+                    *Wijken in Luik
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Leuven.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location6-tr" data-city-name
+                      >Leuven</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-6-tr">
+                    *Wijken in Leuven
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Mechelen.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location7-tr" data-city-name
+                      >Mechelen</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-7-tr">
+                    *Wijken in Mechelen
+                  </p>
+                </div>
+              </li>
+
+              <li class="cities-item swiper-slide">
+                <img
+                  class="cities-item__image"
+                  src="./images/locations-Oostende.jpg"
+                  alt="City"
+                  width="100%"
+                />
+
+                <div class="cities-item__gradient"></div>
+
+                <div class="cities-item__text-wrapper">
+                  <p class="cities-item__location">
+                    <img
+                      class="cities-item__location-icon"
+                      src="./images/cities-location.svg"
+                      alt="Location icon"
+                      width="25px"
+                    />
+
+                    <span class="cities-item__location8-tr" data-city-name
+                      >Oostende</span
+                    >
+                  </p>
+
+                  <button
+                    class="cities-item__button"
+                    type="button"
+                    data-modal-find-match-open
+                  >
+                    <span class="cities-item__button-tr">Vind een match</span>
+
+                    <img
+                      class="cities-item__button-icon"
+                      src="./images/search.svg"
+                      alt="Search"
+                      width="22px"
+                    />
+                  </button>
+
+                  <p class="cities-details cities-details-8-tr">
+                    *Wijken in Oostende
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics-section">
+        <div class="container-basic statistics-container">
+          <ul class="statistics-list">
+            <li class="statistics-item">
+              <p class="statistics-item__value">6000+</p>
+
+              <p class="statistics-item__name statistics-item__users-tr">
+                Geregistreerde gebruikers
+              </p>
+            </li>
+
+            <li class="statistics-item">
+              <p class="statistics-item__value">1500+</p>
+
+              <p class="statistics-item__name statistics-item__couples-tr">
+                Gelukkige Stellen
+              </p>
+            </li>
+
+            <li class="statistics-item">
+              <p class="statistics-item__value">900+</p>
+
+              <p
+                class="statistics-item__name statistics-item__active-members-tr"
+              >
+                Actieve Leden Dagelijks
+              </p>
+            </li>
+
+            <li class="statistics-item">
+              <p class="statistics-item__value">300+</p>
+
+              <p class="statistics-item__name statistics-item__new-members-tr">
+                Nieuwe Leden Dagelijks
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="container-basic story-container">
+          <h2 class="story-title story-title-tr">
+            Ze hebben elkaar bij ons ontmoet!
+          </h2>
+
+          <p class="story-descr nl story-descr-tr">
+            We zijn enthousiast en trots dat we duizenden betekenisvolle
+            connecties en hartverwarmende liefdesverhalen hebben helpen creëren.
+            Word een van onze romantische verhalen
+          </p>
+
+          <ul class="story-list">
+            <li class="story-item">
+              <img
+                class="story-item__image"
+                src="./images/story-1.jpg"
+                alt="Man and woman"
+                width="100%"
+              />
+
+              <p class="story-item__names">Emma & Lucas</p>
+
+              <div class="story-item__gradient"></div>
+            </li>
+
+            <li class="story-item">
+              <img
+                class="story-item__image"
+                src="./images/story-2.jpg"
+                alt="Man and woman"
+                width="100%"
+              />
+
+              <p class="story-item__names">Lina & Noah</p>
+
+              <div class="story-item__gradient"></div>
+            </li>
+
+            <li class="story-item">
+              <img
+                class="story-item__image"
+                src="./images/story-3.jpg"
+                alt="Man and woman"
+                width="100%"
+              />
+
+              <p class="story-item__names">Olivia & Liam</p>
+
+              <div class="story-item__gradient"></div>
+            </li>
+          </ul>
+
+          <p class="story__register-text nl story__register-text-tr">
+            Meld je aan om jouw match te ontmoeten
+          </p>
+
+          <button
+            class="get-started__button"
+            type="button"
+            data-modal-register-open
+          >
+            <span class="get-started__button-tr">Begin Nu</span>
+            <img src="./images/arrow-right.svg" alt="Arrow" />
+          </button>
+        </div>
+      </section>
+
+      <section class="feedbacks-section">
+        <div class="container-basic feedbacks-container">
+          <h2 class="feedbacks-title feedbacks-title-tr">
+            Wat gebruikers zeggen
+          </h2>
+
+          <ul class="feedbacks-list">
+            <li class="feedbacks-item">
+              <div class="feedbacks-item__info-wrapper">
+                <img
+                  class="feedbacks-item__image"
+                  src="./images/feedback-1.png"
+                  alt="Avatar"
+                  width="55px"
+                  height="55px"
+                />
+
+                <div class="feedbacks-item__user-data">
+                  <p class="feedbacks-item__user-name">Jean Dupont</p>
+                  <p
+                    class="feedbacks-item__user-location feedbacks-item__user1-location-tr"
+                  >
+                    Brussel
+                  </p>
+                </div>
+
+                <p class="feedbacks-item__date">21.12.2023</p>
+              </div>
+
+              <p class="feedbacks-item__feedback feedbacks-item__feedback1-tr">
+                "De datingsite heeft me geholpen mijn wederhelft te vinden. De
+                interface is zeer gebruiksvriendelijk en intuïtief. Ik heb hier
+                veel interessante mensen ontmoet en nieuwe vrienden gemaakt.
+                Bijzondere dank voor de functie waarmee je profielen kunt
+                filteren op interesses en hobby's; het helpt echt om de juiste
+                persoon te vinden."
+              </p>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="feedbacks-item__info-wrapper">
+                <img
+                  class="feedbacks-item__image"
+                  src="./images/feedback-2.png"
+                  alt="Avatar"
+                  width="55px"
+                  height="55px"
+                />
+
+                <div class="feedbacks-item__user-data">
+                  <p class="feedbacks-item__user-name">Louis Vermeulen</p>
+                  <p
+                    class="feedbacks-item__user-location feedbacks-item__user2-location-tr"
+                  >
+                    Antwerpen
+                  </p>
+                </div>
+
+                <p class="feedbacks-item__date">02.01.2024</p>
+              </div>
+
+              <p class="feedbacks-item__feedback feedbacks-item__feedback2-tr">
+                "Ik was al lange tijd op zoek naar een datingsite die echt
+                werkt, en deze site heeft al mijn verwachtingen overtroffen.
+                Hier heb ik verschillende geweldige vrienden gevonden en zelfs
+                mijn liefde ontmoet. De ondersteuning van de site is altijd
+                uitstekend, en het aantal actieve gebruikers is indrukwekkend.
+                Ik raad het iedereen aan die op zoek is naar oprechte en echte
+                relaties."
+              </p>
+            </li>
+
+            <li class="feedbacks-item">
+              <div class="feedbacks-item__info-wrapper">
+                <img
+                  class="feedbacks-item__image"
+                  src="./images/feedback-3.png"
+                  alt="Avatar"
+                  width="55px"
+                  height="55px"
+                />
+
+                <div class="feedbacks-item__user-data">
+                  <p class="feedbacks-item__user-name">Olivier De Smet</p>
+                  <p
+                    class="feedbacks-item__user-location feedbacks-item__user3-location-tr"
+                  >
+                    Gent
+                  </p>
+                </div>
+
+                <p class="feedbacks-item__date">12.04.2024</p>
+              </div>
+
+              <p class="feedbacks-item__feedback feedbacks-item__feedback3-tr">
+                "De site heeft echt aan mijn verwachtingen voldaan. In het begin
+                was ik sceptisch, maar na een paar weken gebruik besefte ik dat
+                je hier veel interessante en serieuze mensen kunt ontmoeten. Het
+                matchmakingssysteem werkt geweldig, en ik heb mijn wederhelft al
+                ontmoet. Ik raad iedereen aan om het eens te proberen!"
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="find-match-section">
+        <div class="container-basic find-match-container">
+          <h2 class="find-match__title">
+            <span class="find-match-title-line1-tr"> Vind nu je</span>
+            <span class="accent find-match-title-line2-tr">Perfecte Match</span>
+          </h2>
+
+          <p class="find-match__descr find-match__descr-tr">
+            Ontdek Ware Liefde en Betekenisvolle Connecties
+          </p>
+
+          <button
+            class="get-started__button"
+            type="button"
+            data-modal-register-open
+          >
+            <span class="get-started__button-tr">Begin Nu</span>
+            <img src="./images/arrow-right.svg" alt="Arrow" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-basic footer-container">
+        <div class="footer-links">
+          <a
+            href="javascript:void(0)"
+            class="footer-link footer-private-policy-tr"
+            >Privacybeleid</a
+          >
+          <a href="javascript:void(0)" class="footer-link footer-terms-tr"
+            >Gebruiksvoorwaarden</a
+          >
+          <a href="javascript:void(0)" class="footer-link footer-unsubscribe-tr"
+            >Afmelden</a
+          >
+        </div>
+
+        <p class="footer-copyright footer-copyright-tr">
+          Copyright ©2024 Alle rechten voorbehouden
+        </p>
+      </div>
+    </footer>
+
+    <!================= Modals =================>
+
+    <!-- Find Match Modal -->
+    <div class="backdrop-modal is-hidden" data-modal-find-match>
+      <div class="modal-window">
+        <p class="modal-register__text modal-find-match-title-tr">
+          Vind een match
+        </p>
+
+        <div class="calculator-wrapper">
+          <div>
+            <div class="calculator-location__modal-wrapper">
+              <img
+                class="calculator-location__icon"
+                src="./images/find-match-location.svg"
+                alt="Location Arrow"
+                width="20px"
+              />
+
+              <p class="calculator-modal__city-name">Brussels</p>
+            </div>
+
+            <p class="calculator-modal__location-descr">
+              *Neighborhoods of Brussels
+            </p>
+          </div>
+
+          <div class="slider-distance__container">
+            <p class="slider-distance__lable slider-distance__lable-tr">
+              Max. afstand
+            </p>
+
+            <input
+              type="range"
+              id="js-distance-range-modal"
+              min="0"
+              max="40"
+              step="1"
+              value="20"
+              class="slider-distance__input"
+            />
+            <div id="js-distance-value-display-modal">20km</div>
+          </div>
+
+          <div class="slider-age__container">
+            <p class="slider-age__label slider-age__label-tr">
+              Leeftijdscategorie
+            </p>
+
+            <input
+              type="range"
+              id="js-age-range-min-modal"
+              min="0"
+              max="80"
+              step="1"
+              value="40"
+              class="slider-age__input"
+            />
+
+            <input
+              type="range"
+              id="js-age-range-max-modal"
+              min="0"
+              max="80"
+              step="1"
+              value="50"
+              class="slider-age__input"
+            />
+
+            <div id="js-age-range-value-display-modal">40-50</div>
+          </div>
+
+          <button
+            class="find-partner-button"
+            type="button"
+            data-close-modal-find-match-open-find-partner
+          >
+            <span class="find-partner-button-tr">Vind je partner</span>
+
+            <img src="./images/search.svg" alt="Search" width="22px" />
+          </button>
+        </div>
+
+        <button
+          class="modal-window__btn-close"
+          type="button"
+          data-modal-find-match-close
+        >
+          <svg class="modal-window__close-icon" width="24px" height="24px">
+            <use xlink:href="./images/icon-close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Users Modal / Find Partner Modal -->
+    <div class="backdrop-modal is-hidden" data-modal-users>
+      <div class="modal-window small">
+        <p class="modal-register__text users">
+          <span class="modal-users-title-line1-tr">Om</span>
+          <span class="modal-users-girl-name">Olivia</span>
+          <span class="modal-users-title-line2-tr">
+            een "reactie" te geven, registreer je alstublieft.</span
+          >
+        </p>
+
+        <p
+          class="modal-register__text find-partner modal-find-partner-title-tr"
+        >
+          Zet de laatste stap om je partner te vinden
+        </p>
+
+        <button
+          class="get-started__button"
+          type="submit"
+          data-close-modal-users-open-register
+        >
+          <span class="get-started__button-tr">Begin Nu</span>
+          <img src="./images/arrow-right.svg" alt="Arrow" />
+        </button>
+
+        <button
+          class="modal-window__btn-close small"
+          type="button"
+          data-modal-users-close
+        >
+          <svg class="modal-window__close-icon" width="24px" height="24px">
+            <use xlink:href="./images/icon-close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="backdrop-modal is-hidden" data-modal-register>
+      <div class="modal-window">
+        <p class="modal-register__text modal-register__text-tr">
+          Begin met het vinden van je match
+        </p>
+
+        <form action="#" method="POST" onsubmit="">
+          <div class="box-form">
+            <label for="email">
+              <span class="form-label email-label-tr">Email</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                value=""
+                required
+              />
+            </label>
+          </div>
+
+          <div class="box-form">
+            <label for="password">
+              <span class="form-label password-label-tr">Wachtwoord</span>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Wachtwoord"
+                value=""
+                required
+              />
+            </label>
+          </div>
+
+          <button class="get-started__button" type="submit">
+            <span class="get-started__button-tr">Begin Nu</span>
+            <img src="./images/arrow-right.svg" alt="Arrow" />
+          </button>
+        </form>
+
+        <button
+          class="modal-window__btn-close"
+          type="button"
+          data-modal-register-close
+        >
+          <svg class="modal-window__close-icon" width="24px" height="24px">
+            <use xlink:href="./images/icon-close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="backdrop-modal is-hidden" data-loader>
+      <div class="loader-wrapper">
+        <span class="loader"></span>
+      </div>
+    </div>
+
+    <!================= Scripts =================>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swipers -->
+    <script type="module" src="./js/swiperHandler.js"></script>
+
+    <!-- Smooth Scroll Initialize-->
+    <script type="module" src="./js/smoothScroll.js"></script>
+
+    <!-- Modals Handler-->
+    <script type="module" src="./js/modalsHandler.js"></script>
+
+    <!-- Input Range Handler-->
+    <script type="module" src="./js/inputRangeHandler.js"></script>
+
+    <!-- Language Handler-->
+    <script type="module" src="./js/langHandler.js"></script>
+  </body>
+</html>
